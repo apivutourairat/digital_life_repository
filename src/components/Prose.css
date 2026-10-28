@@ -1,0 +1,86 @@
+.prose {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.prose > * + * {
+  margin-top: 1.2em;
+}
+
+.prose h2 {
+  font-family: 'Zilla Slab', serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  margin-top: 2em;
+}
+
+.prose blockquote {
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  border-left: 4px solid var(--rooster-red);
+  padding-left: 20px;
+}
+
+.prose ul {
+  padding-left: 1.4em;
+}
+
+.prose li + li {
+  margin-top: 0.3em;
+}
+
+.prose img,
+.prose video {
+  display: block;
+  max-width: 100%;
+}
+
+.prose video {
+  width: 100%;
+  background: #000;
+}
+
+.prose-gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.prose-gallery img {
+  flex-basis: 0;
+  min-width: 0;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .prose-gallery {
+    flex-direction: column;
+  }
+
+  .prose-gallery img {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+.prose-embed {
+  position: relative;
+  padding-top: 56.25%;
+  background: #000;
+}
+
+.prose-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.prose figcaption {
+  color: #666;
+  margin-top: 8px;
+}

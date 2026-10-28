@@ -1,0 +1,96 @@
+/* Global tokens, base styles and the typography classes shared across components. */
+
+:root {
+  --kraft: #b38b67;
+  --kraft-dark: #a17c5a;
+  --bone: #f8f8f8;
+  --cobalt: #2b4cc4;
+  --rooster-red: #d12026;
+  --black: #1a1a1a;
+  --pixel-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('data:image/svg+xml;utf8,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 0V16L4 12L7 19L10 17L7 11H13L0 0Z" fill="white" stroke="black" stroke-width="2"/%3E%3C/svg%3E'), auto;
+}
+
+body {
+  background-color: var(--kraft);
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.1) 100%);
+  color: var(--bone);
+  font-family: 'IBM Plex Mono', monospace;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 40px;
+}
+
+/* ---- Typography ---- */
+
+.display-yant {
+  font-family: 'Charmonman', cursive;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.display-en {
+  font-family: 'Zilla Slab', serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.metadata {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Shared bits ---- */
+
+.nav-item {
+  text-decoration: none;
+  color: var(--bone);
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.nav-item:hover {
+  background: var(--bone);
+  color: var(--black);
+}
+
+.item-category {
+  font-size: 10px;
+  background: var(--black);
+  color: var(--bone);
+  padding: 2px 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.item-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.item-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+.section-header {
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto 40px;
+  border-bottom: 2px solid var(--bone);
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 1.5rem;
+}

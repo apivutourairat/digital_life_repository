@@ -1,0 +1,15 @@
+.site-footer {
+  padding: 100px 40px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-mantra {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.footer-binary {
+  margin-top: 40px;
+  opacity: 0.3;
+}
